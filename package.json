@@ -1,0 +1,38 @@
+{
+  "name": "react-node-bootstrap-sass",
+  "version": "1.0.0",
+  "description": "React template with Node + ReactBootstrap + Sass",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "testServer": "jasmine-node --watch spec/ --autotest --color spec/",
+    "testClient": "cd client && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/someoneigna/node-react-bootstrap-sass.git"
+  },
+  "keywords": [
+    "boostrap",
+    "template",
+    "nodejs",
+    "react",
+    "sass"
+  ],
+  "author": "Ignacio Alvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/someoneigna/react-node-bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/someoneigna/react-node-bootstrap-sass#readme",
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "jasmine-node": "^1.14.5",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
